@@ -1,6 +1,6 @@
 # NLP
-*List of notebooks focused on NLP* or Machine Learning.
-**
+*List of notebooks focused on NLP* or Machine Learning.*
+***
 
 ## A note on the notebook rendering
 Each notebook has two versions (all python scripts are unaffected by this):
@@ -21,5 +21,5 @@ Each notebook has two versions (all python scripts are unaffected by this):
 
 ## Python Libraries
 - [spaCy](https://spacy.io/) is a widely used python library with a comprehensive feature set for fast text processing in multiple languages.
- -[TextBlob](https://textblob.readthedocs.io/en/dev/) is a python library that provides a simple API for common NLP tasks and builds on the Natural Language Toolkit (nltk) and the Pattern web mining libraries. TextBlob facilitates part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and others.
+ - [TextBlob](https://textblob.readthedocs.io/en/dev/) is a python library that provides a simple API for common NLP tasks and builds on the Natural Language Toolkit (nltk) and the Pattern web mining libraries. TextBlob facilitates part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and others.
 
