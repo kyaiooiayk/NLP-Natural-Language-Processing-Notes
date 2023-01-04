@@ -1,5 +1,5 @@
 # NLP
-*List of notebooks focused on NLP.*
+*List of notebooks/tutorials/scripts and notes focused on NLP.*
 ***
 
 ## A note on the notebook rendering
