@@ -14,8 +14,3 @@ Each notebook has two versions (all python scripts are unaffected by this):
  - [TextBlob](https://textblob.readthedocs.io/en/dev/) is a python library that provides a simple API for common NLP tasks and builds on the Natural Language Toolkit (nltk) and the Pattern web mining libraries. TextBlob facilitates part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and others.
 ***
 
-## Available tutorials
-- Applying Zipf's law to text.ipynb
-- Word2Vec Text Classification.ipynb
-***
-
