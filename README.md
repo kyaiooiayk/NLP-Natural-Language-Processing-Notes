@@ -2,12 +2,6 @@
 *List of notebooks/tutorials/scripts and notes focused on NLP.*
 ***
 
-## A note on the notebooks rendering
-Each notebook has two versions (all python scripts are unaffected by this):
-- One where all the markdown comments are rendered in black & white. These are placed in the folder named `GitHub_MD_rendering` where MD stands for MarkDown.
-- One where all the markdown comments are rendered in coloured background.
-***
-
 ## Python Libraries
 - [CoreNLP](https://stanfordnlp.github.io/CoreNLP/) is an extremely popular library for Natural Language Processing tasks, built by the Stanford NLP community – they also actively maintain the framework. On the contrary to NLTK and SpaCy, which were written in either Python or Cython respectively, CoreNLP is in Java – meaning that your computer will need to have JDK (but it does have APIs for most programming languages). 
 - [gensim](https://pypi.org/project/gensim/) Gensim is a Python library for topic modelling, document indexing and similarity retrieval with large corpora. Target audience is the natural language processing (NLP) and information retrieval (IR) community.
@@ -17,5 +11,10 @@ Each notebook has two versions (all python scripts are unaffected by this):
 ***
 
 ## Available tutorials
+***
 
+## A note on the notebooks rendering
+Each notebook has two versions (all python scripts are unaffected by this):
+- One where all the markdown comments are rendered in black & white. These are placed in the folder named `GitHub_MD_rendering` where MD stands for MarkDown.
+- One where all the markdown comments are rendered in coloured background.
 ***
