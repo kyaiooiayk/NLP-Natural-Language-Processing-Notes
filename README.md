@@ -13,6 +13,10 @@
 ## Available tutorials
 ***
 
+## LLM - large language models
+- For tutorials and other resources, see [this](https://github.com/kyaiooiayk/Awesome-LLM-Large-Language-Models-Notes) other repository.
+***
+
 ## A note on the notebooks rendering
 Each notebook has two versions (all python scripts are unaffected by this):
 - One where all the markdown comments are rendered in black & white. These are placed in the folder named `GitHub_MD_rendering` where MD stands for MarkDown.
