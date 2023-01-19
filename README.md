@@ -14,7 +14,7 @@
 ***
 
 ## LLM - large language models
-- For tutorials and other resources, see [this](https://github.com/kyaiooiayk/Awesome-LLM-Large-Language-Models-Notes) other repository.
+- For tutorials and other resources, see [this](https://github.com/kyaiooiayk/Awesome-LLM-Large-Language-Models-Notes) repository.
 ***
 
 ## A note on the notebooks rendering
