@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # <h1>Table of Contents<span class="tocSkip"></span></h1>
-# <div class="toc"><ul class="toc-item"><li><span><a href="#Introduction" data-toc-modified-id="Introduction-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Introduction</a></span></li><li><span><a href="#Imports" data-toc-modified-id="Imports-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Imports</a></span></li><li><span><a href="#BM25-(Best-Match)-vs.-TFIDF" data-toc-modified-id="BM25-(Best-Match)-vs.-TFIDF-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>BM25 (Best Match) vs. TFIDF</a></span></li><li><span><a href="#Generating-some-text" data-toc-modified-id="Generating-some-text-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Generating some text</a></span></li><li><span><a href="#BM25---Implementation" data-toc-modified-id="BM25---Implementation-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>BM25 - Implementation</a></span></li><li><span><a href="#Testing" data-toc-modified-id="Testing-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Testing</a></span></li><li><span><a href="#References" data-toc-modified-id="References-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>References</a></span></li></ul></div>
+# <div class="toc"><ul class="toc-item"><li><span><a href="#Introduction" data-toc-modified-id="Introduction-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Introduction</a></span></li><li><span><a href="#Imports" data-toc-modified-id="Imports-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Imports</a></span></li><li><span><a href="#BM25-(Best-Match)-vs.-TFIDF" data-toc-modified-id="BM25-(Best-Match)-vs.-TFIDF-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>BM25 (Best Match) vs. TFIDF</a></span></li><li><span><a href="#Generating-some-text" data-toc-modified-id="Generating-some-text-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Generating some text</a></span></li><li><span><a href="#BM25---Implementation" data-toc-modified-id="BM25---Implementation-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>BM25 - Implementation</a></span></li><li><span><a href="#Testing" data-toc-modified-id="Testing-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Testing</a></span></li><li><span><a href="#References" data-toc-modified-id="References-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>References</a></span></li><li><span><a href="#Requirements" data-toc-modified-id="Requirements-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Requirements</a></span></li></ul></div>
 
 # # Introduction
 # <hr style = "border:2px solid black" ></hr>
@@ -34,7 +34,7 @@ import requests
 # 
 # - **Both** BM25 and TFIDF try to represent our text in a vector space.
 # - **TFIDF**: If the term is common in this article, but relatively rare elsewhere, then the TFIDF score will be high, and documents that have higher TFIDF score would be considered as very relevant to the search term.
-# - **BM25** improves upon TFIDF by casting relevance as a probability problem. A relevance score, according to probabilistic information retrieval, ought to reflect the probability a user will consider the result relevant
+# - **BM25** improves upon TFIDF by casting relevance as a probability problem. A relevance score, according to probabilistic information retrieval, ought to reflect the probability a user will consider the result relevant.
 # - The graph below show how the two methods diverge as the frequency increases.
 # 
 # </font>
@@ -242,6 +242,16 @@ for score, doc in zip(scores, corpus):
 # 
 # </font>
 # </div>
+
+# # Requirements
+# <hr style="border:2px solid black"> </hr>
+
+# In[1]:
+
+
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-v -iv -m')
+
 
 # In[ ]:
 

@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # <h1>Table of Contents<span class="tocSkip"></span></h1>
-# <div class="toc"><ul class="toc-item"><li><span><a href="#Introduction" data-toc-modified-id="Introduction-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Introduction</a></span></li><li><span><a href="#Imports" data-toc-modified-id="Imports-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Imports</a></span></li><li><span><a href="#BOW" data-toc-modified-id="BOW-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>BOW</a></span></li><li><span><a href="#Create-sentences" data-toc-modified-id="Create-sentences-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Create sentences</a></span></li><li><span><a href="#Home-made-implementation" data-toc-modified-id="Home-made-implementation-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Home made implementation</a></span></li><li><span><a href="#Implementation-with-sklearn" data-toc-modified-id="Implementation-with-sklearn-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Implementation with sklearn</a></span></li><li><span><a href="#BoW-with-binary-vectors" data-toc-modified-id="BoW-with-binary-vectors-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>BoW with binary vectors</a></span></li><li><span><a href="#Creating-n-grams" data-toc-modified-id="Creating-n-grams-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Creating n-grams</a></span></li><li><span><a href="#Feature-Extraction-with-Tf-Idf-vectorizer" data-toc-modified-id="Feature-Extraction-with-Tf-Idf-vectorizer-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>Feature Extraction with Tf-Idf vectorizer</a></span></li><li><span><a href="#References" data-toc-modified-id="References-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>References</a></span></li></ul></div>
+# <div class="toc"><ul class="toc-item"><li><span><a href="#Introduction" data-toc-modified-id="Introduction-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Introduction</a></span></li><li><span><a href="#Imports" data-toc-modified-id="Imports-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Imports</a></span></li><li><span><a href="#BOW" data-toc-modified-id="BOW-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>BOW</a></span></li><li><span><a href="#Create-sentences" data-toc-modified-id="Create-sentences-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Create sentences</a></span></li><li><span><a href="#Implementation-from-scratch" data-toc-modified-id="Implementation-from-scratch-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Implementation from scratch</a></span></li><li><span><a href="#Implementation-with-sklearn" data-toc-modified-id="Implementation-with-sklearn-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Implementation with sklearn</a></span></li><li><span><a href="#BoW-with-binary-vectors" data-toc-modified-id="BoW-with-binary-vectors-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>BoW with binary vectors</a></span></li><li><span><a href="#Creating-n-grams" data-toc-modified-id="Creating-n-grams-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Creating n-grams</a></span></li><li><span><a href="#Feature-Extraction-with-Tf-Idf-vectorizer" data-toc-modified-id="Feature-Extraction-with-Tf-Idf-vectorizer-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>Feature Extraction with Tf-Idf vectorizer</a></span></li><li><span><a href="#References" data-toc-modified-id="References-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>References</a></span></li><li><span><a href="#Requirements" data-toc-modified-id="Requirements-11"><span class="toc-item-num">11&nbsp;&nbsp;</span>Requirements</a></span></li></ul></div>
 
 # # Introduction
 # <hr style = "border:2px solid black" ></hr>
@@ -41,9 +41,7 @@ stopwordsNLTK = set(stopwords.words('english'))
 # want these words taking up space in our database, or taking up valuable processing time. For this, we can 
 # remove them easily by storing a list of words that you consider to be stop words.
 # 
-# - **TOKENIZATION** is the act of breaking up a sequence of strings into pieces such as words, keywords, phrases, 
-# symbols and other elements called tokens. Tokens can be individual words, phrases or even whole sentences. 
-# In the process of tokenization, some characters like punctuation marks are discarded. 
+# - **TOKENIZATION** is the act of breaking up a sequence of strings into pieces such as words, keywords, phrases, symbols and other elements called tokens. Tokens can be individual words, phrases or even whole sentences. In the process of tokenization, some characters like punctuation marks are discarded. 
 # 
 # </font>
 # </div>
@@ -63,7 +61,7 @@ string3 =  "This is a good job. I will not miss it for anything"
 string4 = "This is not good at all"
 
 
-# # Home made implementation
+# # Implementation from scratch
 # <hr style = "border:2px solid black" ></hr>
 
 # In[5]:
@@ -357,6 +355,16 @@ print("Tfidf representation for 'dog and man are friends':\n", temp.toarray())
 # 
 # </font>
 # </div>
+
+# # Requirements
+# <hr style="border:2px solid black"> </hr>
+
+# In[1]:
+
+
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-v -iv -m')
+
 
 # In[ ]:
 
